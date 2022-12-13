@@ -6,56 +6,116 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first": string;
-        /**
-          * The last name
-         */
-        "last": string;
-        /**
-          * The middle name
-         */
-        "middle": string;
+    interface PichinchaButton {
+        "textButton": string;
+        "type": string;
+    }
+    interface PichinchaIconResult {
+        "size": string;
+        "type": 'success' | 'error';
+    }
+    interface PichinchaInfo {
+        "primaryText": string;
+        "secondaryText": string;
+        "size": string;
+        "type": 'success' | 'error';
+    }
+    interface PichinchaResult {
+        "cancel": string;
+        "done": string;
+        "primaryText": string;
+        "secondaryText": string;
+        "size": string;
+        "type": 'success' | 'error';
+    }
+    interface PichinchaText {
+        "text": string;
+        "type"?: string;
     }
 }
 declare global {
-    interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
+    interface HTMLPichinchaButtonElement extends Components.PichinchaButton, HTMLStencilElement {
     }
-    var HTMLMyComponentElement: {
-        prototype: HTMLMyComponentElement;
-        new (): HTMLMyComponentElement;
+    var HTMLPichinchaButtonElement: {
+        prototype: HTMLPichinchaButtonElement;
+        new (): HTMLPichinchaButtonElement;
+    };
+    interface HTMLPichinchaIconResultElement extends Components.PichinchaIconResult, HTMLStencilElement {
+    }
+    var HTMLPichinchaIconResultElement: {
+        prototype: HTMLPichinchaIconResultElement;
+        new (): HTMLPichinchaIconResultElement;
+    };
+    interface HTMLPichinchaInfoElement extends Components.PichinchaInfo, HTMLStencilElement {
+    }
+    var HTMLPichinchaInfoElement: {
+        prototype: HTMLPichinchaInfoElement;
+        new (): HTMLPichinchaInfoElement;
+    };
+    interface HTMLPichinchaResultElement extends Components.PichinchaResult, HTMLStencilElement {
+    }
+    var HTMLPichinchaResultElement: {
+        prototype: HTMLPichinchaResultElement;
+        new (): HTMLPichinchaResultElement;
+    };
+    interface HTMLPichinchaTextElement extends Components.PichinchaText, HTMLStencilElement {
+    }
+    var HTMLPichinchaTextElement: {
+        prototype: HTMLPichinchaTextElement;
+        new (): HTMLPichinchaTextElement;
     };
     interface HTMLElementTagNameMap {
-        "my-component": HTMLMyComponentElement;
+        "pichincha-button": HTMLPichinchaButtonElement;
+        "pichincha-icon-result": HTMLPichinchaIconResultElement;
+        "pichincha-info": HTMLPichinchaInfoElement;
+        "pichincha-result": HTMLPichinchaResultElement;
+        "pichincha-text": HTMLPichinchaTextElement;
     }
 }
 declare namespace LocalJSX {
-    interface MyComponent {
-        /**
-          * The first name
-         */
-        "first"?: string;
-        /**
-          * The last name
-         */
-        "last"?: string;
-        /**
-          * The middle name
-         */
-        "middle"?: string;
+    interface PichinchaButton {
+        "textButton"?: string;
+        "type"?: string;
+    }
+    interface PichinchaIconResult {
+        "size"?: string;
+        "type"?: 'success' | 'error';
+    }
+    interface PichinchaInfo {
+        "primaryText"?: string;
+        "secondaryText"?: string;
+        "size"?: string;
+        "type"?: 'success' | 'error';
+    }
+    interface PichinchaResult {
+        "cancel"?: string;
+        "done"?: string;
+        "primaryText"?: string;
+        "secondaryText"?: string;
+        "size"?: string;
+        "type"?: 'success' | 'error';
+    }
+    interface PichinchaText {
+        "text"?: string;
+        "type"?: string;
     }
     interface IntrinsicElements {
-        "my-component": MyComponent;
+        "pichincha-button": PichinchaButton;
+        "pichincha-icon-result": PichinchaIconResult;
+        "pichincha-info": PichinchaInfo;
+        "pichincha-result": PichinchaResult;
+        "pichincha-text": PichinchaText;
     }
 }
 export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
-            "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "pichincha-button": LocalJSX.PichinchaButton & JSXBase.HTMLAttributes<HTMLPichinchaButtonElement>;
+            "pichincha-icon-result": LocalJSX.PichinchaIconResult & JSXBase.HTMLAttributes<HTMLPichinchaIconResultElement>;
+            "pichincha-info": LocalJSX.PichinchaInfo & JSXBase.HTMLAttributes<HTMLPichinchaInfoElement>;
+            "pichincha-result": LocalJSX.PichinchaResult & JSXBase.HTMLAttributes<HTMLPichinchaResultElement>;
+            "pichincha-text": LocalJSX.PichinchaText & JSXBase.HTMLAttributes<HTMLPichinchaTextElement>;
         }
     }
 }
