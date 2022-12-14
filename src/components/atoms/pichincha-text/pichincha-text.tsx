@@ -13,7 +13,7 @@ export class PichinchaText implements ComponentInterface{
 
     render() {
         let mainClass = "text ";
-        if(this.type) mainClass += " text__"+this.type;
+        if(this.type) mainClass += " text--"+this.type;
         return (
             <div class={mainClass}>{this.text}</div>
         )

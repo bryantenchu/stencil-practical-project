@@ -1,4 +1,5 @@
 import { Component, ComponentInterface, h, Prop } from "@stencil/core";
+import { CHECK_IMG, ERROR_IMG } from "../../../utils/constants/global";
 
 @Component({
     tag: 'pichincha-icon-result',
@@ -15,7 +16,7 @@ export class IconResult implements ComponentInterface{
         let mainClass = "icon-result";
         if(this.size) mainClass += '--' + this.size;
         return (
-            <img src={this.type == 'success' ? 'https://www.pngkey.com/png/detail/432-4327705_ico-sostenibilidad-reciclaje-icono-visto-bueno-png.png' : 'http://www.setra.com/hubfs/Sajni/crc_error.jpg'} 
+            <img src={this.type == 'success' ? CHECK_IMG : ERROR_IMG} 
             class={mainClass}
             />
         )

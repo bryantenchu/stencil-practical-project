@@ -14,22 +14,23 @@
         color: #fff;
         box-shadow: 0 2px 0 rgb(5 145 255 / 10%);
         background-color: rgb(22, 119, 255);
+
+        &:hover{
+            color: #fff;
+            background-color: #4096ff;
+        }
     }
 
-    &__primary:hover {
-        color: #fff;
-        background-color: #4096ff;
-    }
     
     &__secondary {
         background-color: #fff;
         border-color: #d9d9d9;
         box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
-    }
 
-    &__secondary:hover {
-        color: #4096ff;
-        border-color: #4096ff;
+        &:hover{
+            color: #4096ff;
+            border-color: #4096ff;
+        }
     }
 
 }
