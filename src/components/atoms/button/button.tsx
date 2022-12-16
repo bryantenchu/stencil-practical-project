@@ -2,18 +2,18 @@ import { Component, ComponentInterface, h, Prop } from "@stencil/core";
 
 @Component({
     tag: 'pichincha-button',
-    styleUrl: 'pichincha-button.scss',
+    styleUrl: 'button.scss',
     shadow: true
 })
 
-export class PichinchaButton implements ComponentInterface{
+export class Button implements ComponentInterface{
     
     @Prop() public textButton: string;
     @Prop() public type: string ;
 
     render(){
         return (
-            <button class={`button button__${this.type}`}>
+            <button class={`button button--${this.type}`}>
                 <span>{this.textButton}</span>
             </button>
         )

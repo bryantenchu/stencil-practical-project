@@ -3,7 +3,7 @@ import { CHECK_IMG, ERROR_IMG } from "../../../utils/constants/global";
 
 @Component({
     tag: 'pichincha-icon-result',
-    styleUrl: 'pichincha-icon-result.scss',
+    styleUrl: 'icon-result.scss',
     shadow: true
 })
 

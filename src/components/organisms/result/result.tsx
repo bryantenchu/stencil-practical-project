@@ -2,7 +2,7 @@ import { Component, ComponentInterface, h, Prop } from "@stencil/core/internal";
 
 @Component({
     tag: 'pichincha-result',
-    styleUrl: 'pichincha-result.scss',
+    styleUrl: 'result.scss',
     shadow: true
 })
 

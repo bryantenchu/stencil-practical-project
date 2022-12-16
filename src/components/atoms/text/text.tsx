@@ -2,11 +2,11 @@ import { Component, ComponentInterface, h, Prop } from "@stencil/core";
 
 @Component({
     tag: 'pichincha-text',
-    styleUrl: 'pichincha-text.scss',
+    styleUrl: 'text.scss',
     shadow: true
 })
 
-export class PichinchaText implements ComponentInterface{
+export class Text implements ComponentInterface{
 
     @Prop() public text: string;
     @Prop() public type?: string;
