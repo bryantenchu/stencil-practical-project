@@ -1,0 +1,36 @@
+.button{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 32px;
+    width: 120px;
+    border-radius: 6px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all .2s cubic-bezier(.645,.045,.355,1);
+    user-select: none;
+    touch-action: manipulation;
+
+    &--primary {
+        color: #fff;
+        box-shadow: 0 2px 0 rgb(5 145 255 / 10%);
+        background-color: rgb(22, 119, 255);
+
+        &:hover{
+            color: #fff;
+            background-color: #4096ff;
+        }
+    }
+
+    &--secondary {
+        background-color: #fff;
+        border-color: #d9d9d9;
+        box-shadow: 0 2px 0 rgb(0 0 0 / 2%);
+
+        &:hover{
+            color: #4096ff;
+            border-color: #4096ff;
+        }
+    }
+
+}
+
