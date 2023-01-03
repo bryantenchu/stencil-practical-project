@@ -6,7 +6,7 @@ import { Component, ComponentInterface, h, Prop } from "@stencil/core/internal";
     shadow: true
 })
 
-export class PichinchaResult implements ComponentInterface {
+export class Result implements ComponentInterface {
 
     @Prop() public primaryText: string;
     @Prop() public secondaryText: string;
